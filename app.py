@@ -7,6 +7,9 @@ app = Flask(__name__)
 def mablibsApp():
     return render_template('index.html')
 
+@app.route('/completed')
+def madlibscompleted():
+    return render_template('completed.html')
 
 
 
