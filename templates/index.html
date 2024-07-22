@@ -6,15 +6,16 @@
     <title>Mablibs</title>
     <link rel="stylesheet" href="../static/styles/style.css">
 </head>
-<body>
+<body id="body">
     <div id="everything">
         <div id="welcomeText">
             <h1 id = "Welcome" class = "Text">Welcome to Gabriel and Mattheu's Madlibs</h1>
             <h2 id = "brag" class = "Text">(The greatest Mablibs ever!)</h2>
         </div>
-        <div id="submission">
+        <div id="submissionBox">
+            <br>
             <h2 id="fillInText" class="Text"> Fill in the blanks!</h2>
-            <form action = "{{ url }}" method ="POST">
+            <form action = "{{ url }}" method ="POST" id="madLibsForm">
                 <div id="grid">
                     <input required type="text" id="dayoftheweek" name="dayoftheweek" placeholder="Enter a day of the week" class="madlibsQuestion">
                     <input required type="text" id="name" name="name" placeholder="Enter a name" class="madlibsQuestion">
@@ -23,11 +24,14 @@
                     <input required type="text" id="income" name="income" placeholder="Enter any number" class="madlibsQuestion">
                     <input required type="text" id="noun1" name="noun1" placeholder="Enter a noun" class="madlibsQuestion">
                     <input required type="text" id="place2" name="place2" placeholder="Enter any place" class="madlibsQuestion">
-                    <input required type="text" id="noun2" name="noun2" placeholder="Enter a noun" class="madlibsQuestion">
                     <input required type="text" id="pasttenseverb2" name="pasttenseverb2" placeholder="Enter a past tense verb" class="madlibsQuestion">
+                    <input required type="text" id="noun2" name="noun2" placeholder="Enter a noun" class="madlibsQuestion">
                     <input type="submit" id="submitButton">
                 </div>
             </form>
+            <br>
+            <br>
+            <br>
         </div>
     </div>
 </body>
