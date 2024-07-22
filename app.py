@@ -5,12 +5,11 @@ app = Flask(__name__)
 
 @app.route('/', methods = ['GET', 'POST'])
 def mablibsApp():
-    return render_template('index.html')
+    return render_template('index.html', url=url_for('madlibscompleted'))
 
-@app.route('/completed')
+@app.route('/completed', methods = ['GET', 'POST'])
 def madlibscompleted():
     return render_template('completed.html')
-
 
 
 

@@ -14,7 +14,7 @@
         </div>
         <div id="submission">
             <h2 id="fillInText" class="Text"> Fill in the blanks!</h2>
-            <form>
+            <form action = "{{ url }}" method ="POST">
                 <div id="grid">
                     <input required type="text" id="dayoftheweek" name="dayoftheweek" placeholder="Enter a day of the week" class="madlibsQuestion">
                     <input required type="text" id="noun1" name="noun1" placeholder="Enter a noun" class="madlibsQuestion">
@@ -24,6 +24,7 @@
                     <input required type="text" id="noun2" name="noun2" placeholder="Enter a noun" class="madlibsQuestion">
                     <input required type="text" id="place2" name="place2" placeholder="Enter any place" class="madlibsQuestion">
                     <input required type="text" id="pasttenseverb2" name="pasttenseverb2" placeholder="Enter a past tense verb" class="madlibsQuestion">
+                    <input type="submit" id="submitButton">
                 </div>
             </form>
         </div>
