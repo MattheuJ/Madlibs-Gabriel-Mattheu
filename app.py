@@ -19,7 +19,7 @@ def madlibscompleted():
         place2 = request.form['place2']
         pasttenseverb2 = request.form['pasttenseverb2']
         noun2 = request.form['noun2']
-    return render_template('completed.html',url=url_for('madlibscompleted'), dayoftheweek=dayoftheweek, name=name, place1=place1, pasttenseverb1=pasttenseverb1, income=income, noun1=noun1, place2=place2, pasttenceverb2=pasttenseverb2, noun2=noun2)
+    return render_template('completed.html',url=url_for('madlibscompleted'), dayoftheweek=dayoftheweek, name=name, place1=place1, pasttenseverb1=pasttenseverb1, income=income, noun1=noun1, place2=place2, pasttenseverb2=pasttenseverb2, noun2=noun2)
 
 
 if __name__ == '__main__':
