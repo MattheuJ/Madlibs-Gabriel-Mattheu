@@ -17,6 +17,13 @@ def mablibsApp():
     return render_template('index.html')
     "On one {day of the week}"
 
+@app.route('/', methods = ['GET', 'POST'])
+def mablibsApp():
+    return render_template('index.html', url=url_for('madlibscompleted'))
+
+@app.route('/completed', methods = ['GET', 'POST'])
+def madlibscompleted():
+    return render_template('completed.html')
 
 
 
@@ -29,4 +36,4 @@ def mablibsApp():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80, debug=True)
+    app.run(host='0.0.0.0', port=80, debug=True)    

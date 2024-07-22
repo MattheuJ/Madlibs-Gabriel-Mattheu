@@ -1,5 +1,4 @@
 #everything{
-    text-align: center;
     justify-content: center;
     margin: auto;
     padding: 10px;
@@ -7,10 +6,13 @@
     height: 1000px;
 }
 
+
 #submission{
     background-color: purple;
     width: 100%;
     height: 50%;
+    display: inline-block;
+    flex-wrap: wrap;
 }
 
 #fillInText{
@@ -20,7 +22,20 @@
 .madlibsQuestion{
     width: 200px;
     height: 50px;
-    display: inline-block;
-    flex-wrap: wrap;
 
+}
+
+#grid{  
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+
+}
+
+#welcomeText{
+    text-align: center;
+}
+
+#fillInText{
+    text-align: center;
 }
