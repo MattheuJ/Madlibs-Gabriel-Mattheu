@@ -3,6 +3,20 @@ from flask import Flask, render_template, request, url_for
 app = Flask(__name__)
 
 
+@app.route('/', methods = ['GET','POST'])
+def mablibsApp():
+    if request.method == 'POST':
+        dayoftheweek = request.form['dayoftheweek']
+        noun1 = request.form['noun1']
+        place1 = request.form['place1']
+        pasttencever1 = request.form['pasttenceverb1']
+        income = request.form['income']
+        noun2 = request.form['noun2']
+        place2 = request.form['place2']
+        pasttenceverb2 = request.form['pasttenceverb2']
+    return render_template('index.html')
+    "On one {day of the week}"
+
 @app.route('/', methods = ['GET', 'POST'])
 def mablibsApp():
     return render_template('index.html', url=url_for('madlibscompleted'))
