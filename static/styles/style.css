@@ -1,41 +1,11 @@
-#everything{
-    justify-content: center;
-    margin: auto;
-    padding: 10px;
-    display: flexbox;
-    height: 1000px;
-}
-
-
 #submission{
     background-color: purple;
     width: 100%;
     height: 50%;
-    display: inline-block;
-    flex-wrap: wrap;
 }
 
-#fillInText{
-    color: white;
+everything{
+    width: 1424px;
+    height: 100%;
 }
 
-.madlibsQuestion{
-    width: 200px;
-    height: 50px;
-
-}
-
-#grid{  
-    display: flex;
-    gap: 20px;
-    margin: 20px;
-
-}
-
-#welcomeText{
-    text-align: center;
-}
-
-#fillInText{
-    text-align: center;
-}
