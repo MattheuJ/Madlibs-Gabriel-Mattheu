@@ -9,3 +9,22 @@ everything{
     height: 100%;
 }
 
+#website{
+    background-color: rgb(37,35,35);
+}
+
+
+#text{
+    color: whitesmoke;
+}
+
+#text_div{
+    background-color: rgb(10, 10, 96);
+    border-radius: 10px;
+}
+
+#Title{
+    text-align: center;
+    color: whitesmoke;
+}
+
